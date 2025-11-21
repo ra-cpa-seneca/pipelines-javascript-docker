@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: racpasenecapipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: racpasenecapipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: racpasenecapipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: racpasenecapipelinesjavascriptdocker 
+          image: ryanaouderegistry.azurecr.io/racpasenecapipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
