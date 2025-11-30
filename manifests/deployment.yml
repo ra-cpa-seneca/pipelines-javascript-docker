@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: racpasenecapipelinesjavascriptdocker 
-          image: mcr.microsoft.com/azuredocs/aks-helloworld:v1
+          image: does-not-exist
           ports:
 
           - containerPort: 8080
+
